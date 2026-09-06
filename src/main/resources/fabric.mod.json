@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "instant_multi_fishing",
+  "version": "${version}",
+  "name": "Instant Multi Fishing",
+  "description": "Server-side instant five-hook fishing enchantment.",
+  "authors": ["apm23"],
+  "license": "All-Rights-Reserved",
+  "environment": "server",
+  "entrypoints": {
+    "main": ["dev.apm23.instantmultifishing.InstantMultiFishing"]
+  },
+  "mixins": ["instant_multi_fishing.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
