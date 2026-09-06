@@ -3,11 +3,14 @@
   "id": "instant-multi-fishing-gametest",
   "version": "1.0.0",
   "name": "Instant Multi Fishing GameTest",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "fabric-gametest": [
       "dev.apm23.instantmultifishing.InstantMultiFishingGameTest",
       "dev.apm23.instantmultifishing.InstantCatchRegistrySmokeTest"
+    ],
+    "fabric-client-gametest": [
+      "dev.apm23.instantmultifishing.InstantMultiFishingClientGameTest"
     ]
   }
 }
