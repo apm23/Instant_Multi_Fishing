@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "dev.apm23.instantmultifishing.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "FishingHookAccessor",
+    "FishingHookMixin",
+    "FishingRodItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
