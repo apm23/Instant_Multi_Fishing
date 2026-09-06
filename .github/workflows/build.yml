@@ -19,7 +19,12 @@ jobs:
           gradle-version: '9.5.1'
       - name: Build mod
         run: gradle build --stacktrace
+      - name: Functional GameTest smoke
+        run: gradle runGametest --stacktrace
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: instant-multi-fishing
-          path: build/libs/*.jar
+          path: |
+            build/libs/*.jar
+            build/junit.xml
