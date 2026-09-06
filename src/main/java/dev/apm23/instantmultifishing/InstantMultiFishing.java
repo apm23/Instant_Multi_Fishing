@@ -49,6 +49,11 @@ public final class InstantMultiFishing implements ModInitializer {
         return hooks != null && hooks.stream().anyMatch(FishingHook::isAlive);
     }
 
+    public static int managedHookCount(ServerPlayer player) {
+        List<FishingHook> hooks = ACTIVE_HOOKS.get(player.getUUID());
+        return hooks == null ? 0 : hooks.size();
+    }
+
     public static boolean isManagedHook(FishingHook hook, ServerPlayer player) {
         List<FishingHook> hooks = ACTIVE_HOOKS.get(player.getUUID());
         return hooks != null && hooks.contains(hook);
