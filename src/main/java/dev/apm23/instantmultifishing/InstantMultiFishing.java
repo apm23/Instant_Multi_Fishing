@@ -36,7 +36,7 @@ public final class InstantMultiFishing implements ModInitializer {
     public static boolean hasInstantCatch(ItemStack stack) {
         for (Holder<Enchantment> enchantment : stack.getEnchantments().keySet()) {
             if (enchantment.unwrapKey()
-                    .map(key -> key.location().equals(INSTANT_CATCH_ID))
+                    .map(key -> key.identifier().equals(INSTANT_CATCH_ID))
                     .orElse(false)) {
                 return true;
             }
