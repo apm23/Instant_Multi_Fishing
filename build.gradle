@@ -24,7 +24,7 @@ fabricApi {
         createSourceSet = true
         modId = 'instant-multi-fishing-gametest'
         enableGameTests = true
-        enableClientGameTests = false
+        enableClientGameTests = true
         eula = true
     }
 }
