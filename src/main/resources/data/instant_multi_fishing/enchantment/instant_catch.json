@@ -17,5 +17,6 @@
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/fishing",
+  "primary_items": "#minecraft:enchantable/fishing",
   "weight": 2
 }
