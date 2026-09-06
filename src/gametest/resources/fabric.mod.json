@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "instant-multi-fishing-gametest",
+  "version": "1.0.0",
+  "name": "Instant Multi Fishing GameTest",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-gametest": [
+      "dev.apm23.instantmultifishing.InstantMultiFishingGameTest"
+    ]
+  }
+}
